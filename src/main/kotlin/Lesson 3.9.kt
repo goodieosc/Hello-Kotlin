@@ -35,6 +35,8 @@ fun getFortuneCookie(date: Int) : String {
         else -> 5
     }
 
+
+
     return fortune[cookie]
 
 }

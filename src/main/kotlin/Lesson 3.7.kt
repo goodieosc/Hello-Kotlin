@@ -1,18 +1,21 @@
-/*
+
 fun main(args: Array<String>) {
 
 var bd: String
 
-    for (i in 1..10) {
-        bd = getFortuneCookie()
+    //for (i in 1..10) {
 
-        println("\nYour fortune is: $bd")
-
-        if (bd.contains("Take it easy")) break
+    var fortune: String = ""
+    while (!fortune.contains("Take it easy")) {
+        fortune = getFortuneCookie(getBirthday())
+        println("\nYour fortune is: $fortune")
 
     }
 
     println("Your fortune is: ${getFortuneCookie()}")
+
+
+
 
 }
 
@@ -37,4 +40,4 @@ private fun getFortuneCookie() : String {
 
 
 
-}*/
+}
